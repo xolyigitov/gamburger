@@ -70,7 +70,7 @@ body {
 }
 
 .header-content {
-    background: url(../images/headerBG.jpg) no-repeat center/ cover;
+    background: url(../images/headerbg.jpg) no-repeat center/ cover;
     height: 700px;
 }
 
@@ -79,6 +79,8 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .header-content__tittle {
@@ -86,6 +88,8 @@ body {
     font-family: 'RB';
     font-size: 62px;
     line-height: 85px;
+    position: relative;
+    z-index: 1;
 }
 
 .header-content__item {
@@ -305,9 +309,8 @@ iframe {
     .header-content__center {
         text-align: center;
     }
-
-    .header-content__tittle {
-        margin-top: 45px;
+    .header-content__tittle{
+        margin-top: 100px;
     }
 
     .header-content__btn {
@@ -337,7 +340,9 @@ iframe {
 
     .nav__menu {
         display: none;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+        position: fixed;
+        left: 280px;
     }
 
     .nav__menu-link {
@@ -354,7 +359,6 @@ iframe {
     #burger:checked+label+.nav__menu {
         display: inline-block;
         width: 80px;
-        height: 100%;
         margin-top: 60px;
         animation: show 800ms;
     }
